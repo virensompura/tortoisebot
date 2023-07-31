@@ -117,7 +117,7 @@ def generate_launch_description():
     state_publisher_launch_cmd,
     robot_state_publisher_node,
     joint_state_publisher_node,
-    ydlidar_launch_cmd,
+    rplidar_launch_cmd,
     differential_drive_node,
     gazebo_launch_cmd,
     navigation_launch_cmd, 
