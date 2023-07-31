@@ -53,9 +53,9 @@ def generate_launch_description():
           launch_arguments={'params_file': params_file,
                             'slam':exploration,
                             'use_sim_time':use_sim_time}.items())
-  ydlidar_launch_cmd=IncludeLaunchDescription(
+  rplidar_launch_cmd=IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(ydlidar_launch_dir, 'x2_ydlidar_launch.py')),
+            os.path.join(rplidar_launch_dir, 'rplidar.launch')),
             condition=IfCondition(PythonExpression(['not ', use_sim_time])),
             launch_arguments={'use_sim_time':use_sim_time}.items())
   
